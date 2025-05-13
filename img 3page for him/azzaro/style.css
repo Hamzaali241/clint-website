@@ -1,0 +1,197 @@
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    p {
+      background-color: rgb(161, 145, 99);
+      padding: 10px;
+      color: white;
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    /* Navbar Styling */
+    .navbar1 {
+      padding: 15px 0;
+      background-color: #fff;
+    }
+
+    .navbar1 .container {
+      display: flex;
+      justify-content: center; /* Center the heading */
+      align-items: center;
+    }
+
+    .navbar1 h1 {
+      font-size: 2rem;
+      color: #111;
+      text-align: center; /* Ensure heading is always centered */
+      flex-grow: 1;
+    }
+
+    .icons {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .icons i {
+      font-size: 1.5rem;
+      color: #111;
+      cursor: pointer;
+    }
+
+    .icons i:hover {
+      color: #777;
+    }
+
+    /* Navigation Bar */
+    .navbar-nav .nav-link {
+      font-size: 18px;
+      color: #000;
+      padding-left: 20px; /* Adding space between the links */
+      padding-right: 20px; /* Adding space between the links */
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #007bff;
+    }
+
+    .line {
+      height: 2px;
+      background-color: #5e758f;
+      margin: 10px 0;
+    }
+
+    .card-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      width: calc(33.33% - 20px);
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      max-height: 250px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .order-btn {
+      width: 100%;
+      padding: 10px;
+      background: #000;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .order-btn:hover {
+      background: #333;
+    }
+
+    @media (max-width: 992px) {
+      .card {
+        width: calc(50% - 20px);
+      }
+
+      .navbar1 h1 {
+        text-align: center;
+        font-size: 1.5rem;
+      }
+
+      .icons {
+        display: none; /* Hide the icons on large screens for mobile responsiveness */
+      }
+    }
+
+    @media (max-width: 576px) {
+      .card {
+        width: 100%;
+      }
+
+      .navbar1 h1 {
+        text-align: center;
+        font-size: 1.5rem;
+      }
+
+      .icons {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+      }
+
+      .icons i {
+        font-size: 1.5rem;
+      }
+    }
+
+    /* order file  */
+     html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    /* Parent container to center everything */
+    .center-container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Centered wrapper for image and form */
+    .center-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 500px; /* Optional: Set max-width for form wrapper */
+    }
+
+    /* Style for the image container */
+    #productImageContainer img {
+      max-width: 250px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* Form container */
+    .form-wrapper {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    /* Style for inputs */
+    input.form-control, select.form-select {
+      width: 100%;
+      font-size: 1.1rem;
+      padding: 12px;
+    }
+
+    /* order file end */
